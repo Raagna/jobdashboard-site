@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JobDashboard Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">JobDashboard · last updated October 30, 2026</p>
+
+  <p>JobDashboard is a personal job-search tool that runs on its owner's own computer. It has no hosted server: the app, its database and everything it reads stay on that computer. This policy covers the Google data it can access.</p>
+
+  <h2>What the app accesses</h2>
+  <ul>
+    <li><strong>Gmail</strong>, with the read-only scope <code>gmail.readonly</code>. The app lists and reads messages from recruiting systems and from companies whose jobs are already tracked, within a short time window around the owner's applications (at most 150 emails per scan). It reads the account's email address to show which inbox is connected.</li>
+    <li><strong>Google Drive</strong>, with the scope <code>drive.file</code>. The app creates Google Docs for cover letters and resumes, and can only see files it created.</li>
+  </ul>
+
+  <h2>How it is used</h2>
+  <p>Gmail messages are read to decide whether an email is about an application (received, assessment, interview, rejection or offer) and which tracked job it belongs to. The app then suggests a status change, and the owner applies or dismisses it. Emails the built-in rules can't classify may be passed to a language model that also runs locally (Ollama). They are never sent to an outside service.</p>
+
+  <h2>What is stored</h2>
+  <p>For each matched email, the app keeps the message and thread ids, the date, the sender, the subject, a snippet of at most 300 characters, the label it assigned, the job it matched and the owner's decision. Email bodies are held in memory while being sorted and then dropped. Email content is not written to logs. The Google sign-in tokens are kept in the same local database.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not sold, shared or transferred to anyone. It is not used for advertising or to train AI models, and no person other than the owner reads it.</p>
+  <p>JobDashboard's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing your data</h2>
+  <p><strong>Disconnect Gmail</strong> in the app revokes the sign-in at Google and deletes the stored token and everything scanned. Access can also be removed at any time from your Google Account's <a href="https://myaccount.google.com/connections">Third-party connections</a> page. Google Docs the app created stay in your Drive until you delete them.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can go to the support email shown on Google's sign-in consent screen for JobDashboard.</p>
+
+  <footer><a href="index.html">JobDashboard</a> · Privacy policy</footer>
+</main>
+</body>
+</html>
